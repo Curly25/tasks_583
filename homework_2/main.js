@@ -19,13 +19,13 @@ console.log(res4); // NaN
 console.log(typeof res4); // "number"
 
 //task 2
-let num = prompt('Enter ane number', '');
+let num = prompt('Enter any number', '');
 let a = !(num % 2) && num > 0;
 console.log(a);
 let b = !(num % 7);
 console.log(b);
 
-//task 3
+// //task 3
 let array1 = [ 42, 'spring', true, null];
 alert(array1.length);
 
@@ -53,15 +53,15 @@ else {
 }
 
 //task 6
-
 let a = +prompt('напишіть довжину першої сторони трикутника. довжина повинна бути більше 0', '');
 let b = +prompt('напишіть довжину другої сторони трикутника. довжина повинна бути більше 0', '');
 let c = +prompt('напишіть довжину  третьої сторони трикутника. довжина повинна бути більше 0', '');
 if (isNaN(a) || isNaN(b) || isNaN(c)) {
-alert('Incorect data');
+  alert('Incorect data');
 }
 let squere = (1 / 4) * Math.sqrt((a + b + c) * (b + c - a) * (a + c - b) * (a + b - c));
 console.log(squere.toFixed(3));
+
 if (a ** 2 == b ** 2 + c ** 2 || b ** 2 == a ** 2 + c ** 2 || c ** 2 == a ** 2 + b ** 2) {
   console.log('трикутник прямокутний');
 } else {
@@ -69,7 +69,6 @@ if (a ** 2 == b ** 2 + c ** 2 || b ** 2 == a ** 2 + c ** 2 || c ** 2 == a ** 2 +
 }
 
 // task 7
-
 let hours = new Date().getHours();
 
 if (hours >= 23 || hours < 5) {
@@ -86,16 +85,16 @@ else {
 }
 
 switch (true) {
-    case ((hours >= 23) || (hours < 5)):
-      alert('Доброї ночі');
-      break;
-    case  ((hours >= 5) && (hours < 11)):
-      alert('Доброго ранку');
-      break;
-    case ((hours >= 11) && (hours < 17)):
-      alert('Доброго дня');
-      break;
-    case ((hours >= 17) && (hours < 23)):
-      alert('Доброго вечора');
-      break;
-  }
+  case hours >= 23 || hours < 5:
+    alert('Доброї ночі');
+    break;
+  case hours >= 5 && hours < 11:
+    alert('Доброго ранку');
+    break;
+  case hours >= 11 && hours < 17:
+    alert('Доброго дня');
+    break;
+  case hours >= 17 && hours < 23:
+    alert('Доброго вечора');
+    break;
+}
