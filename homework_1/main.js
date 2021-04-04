@@ -75,10 +75,10 @@ alert('Dear User, your password is ' + password);
 let hourToSecond =  60 * 60;
 alert('Seconds in hour ' + hourToSecond);
 
-let dayToSecond =  60 * 60 * 24;
+let hourToSecond  =  hourToSecond * 24;
 alert('Seconds in a day ' + dayToSecond);
 
-let monthToSecond =  60 * 60 * 24 * 30;
+let monthToSecond =  hourToSecond * 30;
 alert('Seconds in a month ' + monthToSecond);
 
 
