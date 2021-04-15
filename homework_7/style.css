@@ -1,0 +1,32 @@
+button{
+  display: flex;
+  margin: 15px 0 0 15px;
+  padding: 5px;
+  font-size: 20px;
+} 
+button:hover{
+  font-weight: 600;
+  background-color: bisque;
+}
+
+#listOfName, #country{
+  margin: 15px 0 0 15px;
+}  
+
+#text {
+  font-size: 28px;
+}
+#link {
+  font-size: 23px;
+} 
+#resultWidthAndHeight {
+  margin-top: 15px;
+  font-size: 28px;
+} 
+select{
+  padding: 8px 15px;
+  font-size: 18px;
+}
+select:hover {
+  background-color:khaki;
+} 
