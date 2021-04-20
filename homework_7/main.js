@@ -1,16 +1,16 @@
-// task 1
-let newWindow = window.open("", "localhistory", "width=300, height=300");
-setTimeout(() => {
-  newWindow.resizeTo("500", "500");
+// // task 1
+// let newWindow = window.open("", "localhistory", "width=300, height=300");
+// setTimeout(() => {
+//   newWindow.resizeTo("500", "500");
 
-  setTimeout(() => {
-    newWindow.moveTo(200, 200);
+//   setTimeout(() => {
+//     newWindow.moveTo(200, 200);
 
-    setTimeout(() => {
-      newWindow.close();
-    }, 2000);
-  }, 2000);
-}, 2000);
+//     setTimeout(() => {
+//       newWindow.close();
+//     }, 2000);
+//   }, 2000);
+// }, 2000);
 
 // task 2
 function changeCSS() {
@@ -38,7 +38,6 @@ linkElem.addEventListener("mouseout", () => (document.body.style.backgroundColor
 // task 4
 
 let buttonDelete = document.getElementById("chooseAndDelete");
-
 buttonDelete.addEventListener("click", () =>
   document.querySelector("#listOfName option:checked").remove()
 );
