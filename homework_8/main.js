@@ -43,7 +43,7 @@ checkCreditCard("9999-9999-9999-9999");
 
 // task 6
 function checkEmail() {
-  let regexp = /^[^-_#][a-z0-9_.@]{1,20}[^-]$/g;
+  let regexp = /^[^-_#][a-z0-9_.@+-]{1,20}[^-]$/g;
   let result = regexp.test(gmail);
   if (result) {
     console.log("Email is correct!");
@@ -51,7 +51,7 @@ function checkEmail() {
     console.log("Email is not correct!");
   }
 }
-let gmail = "my_mail@gmail.com"; // true
+let gmail = "my_mai-l@gmail.com"; // true
 //let gmail = "#mail_@gmail.com"; // false
 
 checkEmail(gmail);
